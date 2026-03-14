@@ -315,11 +315,17 @@ h2 {
 }
 
 h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.features-item h3 {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
 }
 
 h2,
@@ -997,7 +1003,7 @@ h3 {
     .moto {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-1-tablet@1x.jpg);
+            url(../images/people-office-1@1x.jpg);
     }
 }
 
@@ -1005,11 +1011,95 @@ h3 {
     .moto {
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/people-office-1-tablet@2x.jpg);
+            url(../images/people-office-1@2x.jpg);
     }
 }
 
 @media (min-width: 768px) { 
+    .header-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        margin-left: 120px;
+
+    }
+    .ham-btn {
+        display: none;
+    }
+    .nav-list {
+        display: flex;
+        gap: 40px;
+
+    }
+    
+    .nav-link {
+        padding: 24px 0;
+    }
+    
+    .nav-link,
+    .contacts-link {
+        display: block;
+    }
+
+    .page-header .container {
+        padding: 0 16px;
+    }
+
+    .contacts-link {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        padding: 0;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .moto h1 {
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+
+    h1 {
+        line-height: 1.07;
+        font-size: 56px;
+        max-width: 496px;
+    }
+
+    .moto {
+        padding: 112px 0;
+    }
+
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .features-item {
+        flex-basis: calc((100% - 24px) / 2)
+    }
+
+    .features-item h3 {
+        text-align: left;
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        align-items: center;
+        justify-content: center;
+        max-width: 552px;
+        margin: 0 auto;
+    }
+    
     
 }
 
