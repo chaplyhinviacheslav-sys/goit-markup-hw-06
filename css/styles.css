@@ -26,8 +26,8 @@
     text-transform: uppercase;
     display: inline-block;
     width: 115px;
-    margin-bottom: 16px;
     text-align: center;
+    margin: 0 auto 16px
 }
 
 .accent-logo {
@@ -277,6 +277,7 @@ h1 {
     text-align: center;
     font-size: 36px;
     letter-spacing: 0.02em;
+    max-width: 216px;
 }
 
 .button-order {
@@ -288,6 +289,7 @@ h1 {
     letter-spacing: 0.04em;
     cursor: pointer;
     width: 169px;
+    margin: 0 auto;
     padding-top: 16px;
     padding-bottom: 16px;
     border-radius: 4px;
@@ -397,6 +399,7 @@ h3 {
 
 .features-item h3 {
     padding-bottom: 8px;
+    text-align: center;
 }
 
 
@@ -436,6 +439,8 @@ h3 {
 .team-link {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
+    width: 264px;
+    margin: 0 auto;
     overflow: hidden;
     box-shadow: 
         0 2px 1px 0 rgba(46, 47, 66, 0.08), 
@@ -491,6 +496,7 @@ h3 {
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     padding: 32px 16px;
+    text-align: left;
 }
 
 .portfolio-item h3 {
@@ -690,11 +696,14 @@ h3 {
     flex-direction: row;
     align-items: center;
     gap: 40px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-ico-ham:hover,
-.social-ico-ham:focus {
+.social-ico-ham a{
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-ico-ham a:hover,
+.social-ico-ham a:focus {
     background-color: #404BBF;
 }
 
@@ -752,8 +761,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  pointer-events: ;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms ease-in-out;
   padding: 8px 0;
   overflow-y: auto;
@@ -984,9 +993,26 @@ h3 {
     fill: currentColor
 }
 
-@media (min-width: 768px) { 
-
+@media (min-width: 768px) {
+    .moto {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-1-tablet@1x.jpg);
+    }
 }
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+    .moto {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-1-tablet@2x.jpg);
+    }
+}
+
+@media (min-width: 768px) { 
+    
+}
+
 @media (min-width: 1158px) { 
 
 }
