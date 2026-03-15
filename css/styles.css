@@ -181,7 +181,7 @@ address a:focus {
     align-items: center;
     background-size: cover;
     margin: 0 auto;
-    min-width: 320px;
+    max-width: 100%;
     padding: 72px 0;
 }
 
@@ -650,9 +650,6 @@ h3 {
     text-align: center;
 }
 
-.find-us {
-}
-
 .ham-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
@@ -762,8 +759,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  opacity: 1;
-  pointer-events: ;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms ease-in-out;
   padding: 8px 0;
   overflow-y: auto;
