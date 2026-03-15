@@ -155,6 +155,10 @@ address a:focus {
     padding: 24px 0;
 }
 
+.contacts-link-ham--accent {
+    color: #4D5AE5;
+}
+
 .address-list {
     display: flex;
     gap: 40px;
@@ -186,6 +190,13 @@ address a:focus {
     margin: 0 auto;
     max-width: 100%;
     padding: 72px 0;
+}
+
+@media (min-width: 320px) and (min-resolution: 192dpi) {
+    .moto {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-1@2x.jpg);
+    }
 }
 
 .social-ico {
@@ -659,7 +670,7 @@ h3 {
   width: 100%;
   height: 100%;
   z-index: 999;
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
 }
@@ -679,6 +690,7 @@ h3 {
   background-color: #FFFFFF;
   padding: 72px 24px 40px 16px;
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
     position: absolute;
@@ -726,6 +738,10 @@ h3 {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nav-link-ham.current {
+    color: #404BBF;
+}
+
 .address-list-ham {
     display: flex;
     flex-direction: column;
@@ -733,7 +749,8 @@ h3 {
 }
 
 .contacts-ham {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+    margin-top: auto;
 }
 
 .address-ham-item {
@@ -994,6 +1011,8 @@ h3 {
     fill: currentColor
 }
 
+
+
 @media (min-width: 768px) {
     .moto {
         background-image:
@@ -1161,10 +1180,28 @@ h3 {
 
 }
 
+
+
+@media (min-width: 1158px) {
+    .moto {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-1@1x.jpg);
+    }
+}
+
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
+    .moto {
+        background-image:
+            linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-1@2x.jpg);
+    }
+}
+
 @media (min-width: 1158px) {
     
     .container {
-        max-width: 1158px;
+        max-width: 1140px;
     }
 
     .page-header .container {
@@ -1186,6 +1223,9 @@ h3 {
 
     .contacts-link {
         padding: 24px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 
     .moto h1 {
