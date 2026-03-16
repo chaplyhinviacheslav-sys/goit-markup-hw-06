@@ -50,11 +50,12 @@ body {
     background-color: #FFFFFF;
 }
 
-.page-container {
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 0;
 }
 
 body {
@@ -64,6 +65,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 16px;
+    max-width: 320px;
 }
 
 .page-header .container {
@@ -189,11 +191,11 @@ address a:focus {
     align-items: center;
     background-size: cover;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 320px;
     padding: 72px 0;
 }
 
-@media (min-width: 320px) and (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) {
     .moto {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/people-office-1@2x.jpg);
@@ -371,13 +373,10 @@ h3 {
 
 .portf-card {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portf-card:hover {
-    box-shadow: 
-    0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    box-shadow:
+            0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portf-img-wrapper {
@@ -1091,12 +1090,13 @@ h3 {
 
     .moto {
         padding: 112px 0;
+        max-width: 768px;
     }
 
     .features-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         align-items: flex-start;
     }
 
@@ -1177,8 +1177,6 @@ h3 {
 
 }
 
-
-
 @media (min-width: 1158px) {
     .moto {
         background-image:
@@ -1198,7 +1196,7 @@ h3 {
 @media (min-width: 1158px) {
     
     .container {
-        max-width: 1140px;
+        max-width: 1158px;
     }
 
     .page-header .container {
@@ -1231,6 +1229,11 @@ h3 {
 
     .moto {
         padding: 188px 0;
+        max-width: 1440px;
+    }
+
+    .features-list {
+        gap: 0 24px;
     }
 
     .features-sec {
@@ -1292,6 +1295,17 @@ h3 {
 
     .portfolio-item {
         flex-basis: calc((100% - 48px) / 3);
+    }
+
+    .portf-card {
+        box-shadow: none;
+    }
+
+    .portf-card:hover {
+        box-shadow: 
+            0 2px 1px 0 rgba(46, 47, 66, 0.08),
+            0 1px 1px 0 rgba(46, 47, 66, 0.16),
+            0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
 
     .page-footer .container {
