@@ -48,17 +48,10 @@ body {
     font-weight: 500;
     letter-spacing: 0.02em;
     background-color: #FFFFFF;
-}
-
-body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 0;
-}
-
-body {
     margin: 0;
 }
 
