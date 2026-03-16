@@ -27,7 +27,7 @@
     text-transform: uppercase;
     display: inline-block;
     width: 115px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto 16px
 }
 
@@ -533,6 +533,7 @@ h3 {
     max-width: 264px;
     font-size: 16px;
     font-weight: 400;
+    text-align: left;
 }
 
 .page-footer .container {
